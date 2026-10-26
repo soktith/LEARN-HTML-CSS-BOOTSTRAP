@@ -1,0 +1,33 @@
+FRONTEND :
+web design = html css bootstrap
+wed frontend = js reactjsX
+
+=========================================
+=>HTML
+List: (<li></li> = list) , (<ul></ul> = Unorder) , (<ol></ol> = order List)
+    OL = order List (ex: 1 , A , I)
+    UL = Unorder List (ex : . ,...)
+
+
+dl > dt > dd
+
+=============================
+border=""  = table :
+->  table > thead > tr > th =>(head)
+->  tbody > tr > td =>(body)
+
+=>CSS:
+    1.seletor
+        . *
+        . id => #
+        . class => .
+        . ,
+        . >
+    2.design
+        . box model
+        . position => (*{ padding 0, ; margin 0, ; box-sizing border-box;})
+        . flex box
+        . responsive
+        . animation
+
+ 

@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 550px;
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .title p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+        }
+
+        .gender-box {
+            display: flex;
+            gap: 25px;
+            margin-top: 8px;
+        }
+
+        .gender {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            color: #555;
+        }
+
+        .gender input {
+            width: 17px;
+            height: 17px;
+            cursor: pointer;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .row .form-group {
+            flex: 1;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            .row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <h1><i>Registration</i></h1>
+            <p>Please enter your information below</p>
+        </div>
+
+        <form action="" method="POST">
+
+            <!-- Name -->
+            <div class="form-group">
+                <label class="form-label">Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    required
+                    placeholder="Enter your name">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label class="form-label">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    required
+                    placeholder="Enter your email">
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    required
+                    placeholder="Enter your password">
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label class="form-label">Address</label>
+                <input
+                    type="text"
+                    name="address"
+                    class="form-control"
+                    required
+                    placeholder="Enter your address">
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label class="form-label">Gender</label>
+
+                <div class="gender-box">
+
+                    <label class="gender">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Male"
+                            required>
+                        Male
+                    </label>
+
+                    <label class="gender">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Female">
+                        Female
+                    </label>
+
+                </div>
+            </div>
+
+            <!-- Date & Time -->
+            <div class="row">
+
+                <div class="form-group">
+                    <label class="form-label">Date</label>
+                    <input
+                        type="date"
+                        name="date"
+                        class="form-control"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Time</label>
+                    <input
+                        type="time"
+                        name="time"
+                        class="form-control"
+                        required>
+                </div>
+
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input
+                    type="tel"
+                    name="phone"
+                    class="form-control"
+                    required
+                    placeholder="Enter your phone number">
+            </div>
+
+            <!-- Score -->
+            <div class="form-group">
+                <label class="form-label">Score</label>
+                <input
+                    type="number"
+                    name="score"
+                    class="form-control"
+                    min="0"
+                    max="100"
+                    required
+                    placeholder="Enter your score">
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="submit-btn">
+                Submit
+            </button>
+
+        </form>
+
+        <div class="footer">
+            © 2026 Registration Form
+        </div>
+
+    </div>
+
+</body>
+</html>
+
