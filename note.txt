@@ -30,4 +30,11 @@ border=""  = table :
         . responsive
         . animation
 
+
+=Github (push)
+    . git add .
+    . git commit -m "bootstrap"
+    . git push
+    . git status 
+    
  
