@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Users</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #dbeafe, #ede9fe);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .user-card {
+            width: 100%;
+            max-width: 500px;
+            border: none;
+            border-radius: 20px;
+            background: white;
+        }
+
+        .card-header-custom {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .form-control {
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .form-control:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.15);
+        }
+
+        .btn-save {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 11px 30px;
+            transition: 0.3s;
+        }
+
+        .btn-save:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+            color: white;
+        }
+
+        .btn-cancel {
+            border-radius: 10px;
+            padding: 11px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card user-card shadow-lg mx-auto">
+
+            <!-- Header -->
+            <div class="card-header-custom">
+                <h2 class="fw-bold mb-2">Login account</h2>
+                <p class="mb-0">Add a new user to your system</p>
+            </div>
+
+            <!-- Form -->
+            <div class="card-body p-4">
+
+                <form method="POST" enctype="multipart/form-data">
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">
+                            <i class="bi bi-person"></i> User Name
+                        </label>
+                        <input type="text" class="form-control"
+                               name="username"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">
+                            Email Address
+                        </label>
+                        <input type="email" class="form-control"
+                               name="email"
+                               placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">
+                            Profile Picture
+                        </label>
+                        <input type="file" class="form-control"
+                               name="profile" accept="image/*">
+                        <small class="text-muted">
+                            Upload your profile image
+                        </small>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-save flex-grow-1">
+                            Save User
+                        </button>
+
+                        <a href="#" class="btn btn-outline-secondary btn-cancel">
+                            Cancel
+                        </a>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</body>
+</html>

@@ -36,5 +36,8 @@ border=""  = table :
     . git commit -m "bootstrap"
     . git push
     . git status 
+    => git branch(search your name)
+    => git branch -a(search all branch)
+    => git branch -m main master 
     
  
