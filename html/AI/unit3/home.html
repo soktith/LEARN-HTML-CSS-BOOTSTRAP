@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #f5f6f8;
+        font-family: Arial, sans-serif;
+        color: #25282d;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        background: #22262b;
+        min-height: 100vh;
+        padding: 25px 15px;
+    }
+
+    .logo {
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .logo span {
+        color: #e63950;
+    }
+
+    .sidebar a {
+        display: block;
+        color: #e2e2e2;
+        text-decoration: none;
+        padding: 13px 15px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        transition: .3s;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+        background: #dc3545;
+        color: white;
+    }
+
+    /* Main */
+    .main {
+        padding: 25px;
+    }
+
+    .header {
+        background: #22262b;
+        color: white;
+        padding: 30px;
+        border-radius: 15px;
+        margin-bottom: 25px;
+    }
+
+    .header p {
+        color: #aeb2b8;
+    }
+
+    .btn-red {
+        background: #dc3545;
+        color: white;
+        border: none;
+        padding: 11px 20px;
+        border-radius: 7px;
+    }
+
+    .btn-red:hover {
+        background: #bb2d3b;
+        color: white;
+    }
+
+    /* Statistics */
+    .stat-card {
+        background: white;
+        padding: 22px;
+        border-radius: 13px;
+        box-shadow: 0 2px 8px #0000000d;
+        height: 100%;
+    }
+
+    .stat-card p {
+        color: #777;
+        margin-bottom: 8px;
+    }
+
+    .stat-card h3 {
+        color: #dc3545;
+        font-weight: bold;
+    }
+
+    .stat-icon {
+        font-size: 30px;
+        color: #25282d;
+    }
+
+    /* Project */
+    .project-box {
+        background: white;
+        padding: 25px;
+        border-radius: 14px;
+        margin-top: 25px;
+        box-shadow: 0 2px 8px #0000000d;
+    }
+
+    .project-card {
+        background: white;
+        border: 1px solid #e5e5e5;
+        border-radius: 12px;
+        overflow: hidden;
+        height: 100%;
+        transition: .3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 18px #00000015;
+    }
+
+    .project-img {
+        height: 170px;
+        background: #22262b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 50px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-content h5 {
+        font-weight: bold;
+    }
+
+    .project-content p {
+        color: #777;
+        font-size: 14px;
+    }
+
+    .tag {
+        display: inline-block;
+        background: #fce8eb;
+        color: #dc3545;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 11px;
+        margin: 3px;
+    }
+
+    /* Skills */
+    .skill-box {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 25px;
+    }
+
+    .progress {
+        height: 9px;
+        margin-bottom: 15px;
+    }
+
+    .progress-bar {
+        background: #dc3545;
+    }
+
+    @media(max-width: 767px) {
+        .sidebar {
+            min-height: auto;
+        }
+
+        .logo {
+            margin-bottom: 15px;
+        }
+
+        .main {
+            padding: 15px;
+        }
+
+        .header {
+            padding: 20px;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+            <div class="col-md-10 main">
+
+                <!-- HEADER -->
+                <div class="header d-flex justify-content-between align-items-center flex-wrap gap-3" id="home">
+
+                    <div>
+                        <h2 class="fw-bold">
+                            Hi, I'm <span style="color:#dc3545;">OMG SPORTS</span>
+                        </h2>
+
+                        <p class="mb-0">
+                            Full Stack Developer crafting beautiful digital experiences.
+                        </p>
+                    </div>
+
+                    <a href="#projects" class="btn btn-red">
+                        <i class="bi bi-folder me-1"></i> My Projects
+                    </a>
+
+                </div>
+
+                <!-- STATISTICS -->
+               
+
+                <!-- ABOUT ME -->
+                <div class="project-box" id="about">
+                    <h4 class="fw-bold mb-3">About Me</h4>
+
+                    <p class="text-secondary">
+                        Hello! I'm a passionate Full Stack Developer.
+                        I enjoy building modern websites and web applications.
+                        My goal is to create beautiful, responsive and
+                        user-friendly digital experiences.
+                    </p>
+                </div>
+
+                
+                <!-- FEATURED PROJECTS -->
+                <div class="project-box" id="projects">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold">Featured Projects</h4>
+                        <span class="badge bg-danger">3 Projects</span>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <!-- PROJECT 1 -->
+                        <div class="col-md-6 col-xl-4">
+
+                            <div class="project-card">
+
+                                <div class="project-img">
+                                    <i class="bi bi-cart3"></i>
+                                </div>
+
+                                <div class="project-content">
+
+                                    <h5>E-Commerce Platform</h5>
+
+                                    <p>
+                                        A full-featured online shopping
+                                        platform with cart and payment.
+                                    </p>
+
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">Bootstrap</span>
+                                    <span class="tag">Django</span>
+
+                                    <div class="mt-3">
+                                        <a href="#" class="btn btn-red btn-sm">
+                                            <i class="bi bi-eye"></i> View Project
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- PROJECT 2 -->
+                        <div class="col-md-6 col-xl-4">
+
+                            <div class="project-card">
+
+                                <div class="project-img">
+                                    <i class="bi bi-list-check"></i>
+                                </div>
+
+                                <div class="project-content">
+
+                                    <h5>Task Management App</h5>
+
+                                    <p>
+                                        Manage tasks, organize work
+                                        and track your daily progress.
+                                    </p>
+
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">MySQL</span>
+
+                                    <div class="mt-3">
+                                        <a href="#" class="btn btn-red btn-sm">
+                                            <i class="bi bi-eye"></i> View Project
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- PROJECT 3 -->
+                        <div class="col-md-6 col-xl-4">
+
+                            <div class="project-card">
+
+                                <div class="project-img">
+                                    <i class="bi bi-image"></i>
+                                </div>
+
+                                <div class="project-content">
+
+                                    <h5>AI Image Generator</h5>
+
+                                    <p>
+                                        Generate beautiful images
+                                        using artificial intelligence beautiful images
+                                        using artificial.
+                                    </p>
+
+                                    <span class="tag">React</span>
+                                    <span class="tag">OpenAI</span>
+                                    <span class="tag">Python</span>
+
+                                    <div class="mt-3">
+                                        <a href="#" class="btn btn-red btn-sm">
+                                            <i class="bi bi-eye"></i> View Project
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="project-box" id="contact">
+
+                    <h4 class="fw-bold mb-3">Contact Me</h4>
+
+                    <p class="text-secondary">
+        Let's work together and build something amazing!
+                    </p>
+
+                    <a href="mailto:your@email.com" class="btn btn-red">
+                        <i class="bi bi-envelope"></i> Send Email
+                    </a>
+
+                    <a href="https://github.com/" class="btn btn-dark">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+
+                </div>
+
+                <footer class="text-center text-secondary py-4">
+                    © 2026 OMG Portfolio. All Rights Reserved.
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
